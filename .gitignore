@@ -1,17 +1,67 @@
-frontend\.env.local.example
-frontend\.env.example
-frontend\.env
-backend\__pycache__
-frontend\next-output.log
+# Dependencies
 node_modules/
+
+# Next.js
+.next/
+out/
+next.config.js
+next.config.mjs
+
+# Environment variables
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 .env.development
-backend\alembic\__pycache__
-.ruff_cache
-.ruff_cache
-.github
-.kilocode
-.devcontainer/
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Alembic
+alembic/__pycache__/
+
+# Ruff
+.ruff_cache/
+
+# IDE
+.vscode/settings.json
+.vscode/*.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+next-output.log
+
+# ML Models
+*.pt
+*.pth
+*.onnx
+*.bin
+*.ckpt
+
+# Testing
+.coverage
+.pytest_cache/
+
+# Misc
+*.tmp
+*.bak
