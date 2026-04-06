@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+**/node_modules/
 
 # Next.js
 .next/
@@ -15,9 +16,12 @@ next.config.mjs
 .env.production.local
 .env.development
 .env.*.local
+**/.env
+**/.env.local
 
 # Python
 __pycache__/
+**/__pycache__/
 *.py[cod]
 *$py.class
 *.so
@@ -30,15 +34,21 @@ dist/
 build/
 .eggs/
 
+# Backend specific
+backend/data/
+backend/temp_images/
+backend/yolov8n.pt
+
 # Alembic
 alembic/__pycache__/
+**/alembic/__pycache__/
 
 # Ruff
 .ruff_cache/
+**/.ruff_cache/
 
 # IDE
-.vscode/settings.json
-.vscode/*.json
+.vscode/
 .idea/
 *.swp
 *.swo
@@ -49,6 +59,7 @@ Thumbs.db
 
 # Logs
 *.log
+**/*.log
 next-output.log
 
 # ML Models
@@ -61,6 +72,7 @@ next-output.log
 # Testing
 .coverage
 .pytest_cache/
+**/.pytest_cache/
 
 # Misc
 *.tmp
